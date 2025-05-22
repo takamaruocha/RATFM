@@ -95,6 +95,8 @@ Because the existing methods do not perform fine-tuning, we applied the followin
    # For standard RATFM setting
    python generate_ratfm_train_jsonl.py
    python generate_ratfm_eval_jsonl.py
+   cd script
+   python merge_other_domains_jsonl.py
    ```
     > 💡 **Note**  
     > If you are running experiments for `moment` with **RATFM (reconstruction)** setting,  
@@ -114,7 +116,7 @@ Because the existing methods do not perform fine-tuning, we applied the followin
    Once dataset and config are ready, run:
     ```bash
     cd models/{model}/settings/{setting}
-    python run_ratfm.py
+    python run_{setting}.py
     ```
    This will retrain the model and save the model weights to the directory specified by `save_base` of the config file.
       
@@ -122,7 +124,7 @@ Because the existing methods do not perform fine-tuning, we applied the followin
    
    Use the retrained model to evaluate anomaly detection:
     ```bash
-    python eval_ratfm.py
+    python eval_{setting}.py
     ```
     Evaluation results are saved as:
     * `L1Loss/`: Results using raw anomaly score
@@ -143,7 +145,7 @@ Because the existing methods do not perform fine-tuning, we applied the followin
 * Note: Skip step 3 since no retraining is needed.
 
 ### 🚀 **In-domain FT**
-* (Only for `Time-MoE`) Instead of step 1, move into the script directory and generate the required .jsonl files:
+* (Only for `Time-MoE`) Instead of step 1, move into the script directory and generate the required `.jsonl` files:
 ```bash
 cd scripts/{model}
 python generate_domain_group_jsonl.py
@@ -151,7 +153,7 @@ python generate_domain_group_jsonl.py
 * Follow steps 2 through 5 from the procedure above.
 
 ### 🚀 **Out-domain FT**
-* (Only for `Time-MoE`) Instead of step 1, move into the script directory and generate the required .jsonl files:
+* (Only for `Time-MoE`) Instead of step 1, move into the script directory and generate the required `.jsonl` files:
 ```bash
 cd scripts/{model}
 python generate_exclude_domain_jsonl.py
@@ -180,6 +182,7 @@ python generate_exclude_domain_jsonl.py
     This script calculates and outputs the average VUS-ROC, VUS-PR, and F1 score across all datasets.
 
 ### 🔍 Anomaly Detection with GPT-4o
+### 🚀 **Zero-shot**
 1. **Prepare Dataset**
    
    Move into the script directory and generate the required `.dkl` files.
