@@ -1,0 +1,13 @@
+base_dir: "../../../../"
+domain_dict_path: "common/domains_dict.json"
+save_base: "results/moment/out_domain_FT/"
+
+context_length: 512
+forecast_horizon: 96
+data_stride_len: 96
+batch_size: 32
+num_train_epochs: 10
+
+device: "cuda:2"
+
+

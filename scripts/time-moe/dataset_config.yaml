@@ -1,0 +1,14 @@
+# Path to domain definition files
+domain_dict_path: "../../common/domains_dict.json"
+domain_group_dict_path: "../../common/domain_groups.json"
+
+# Parameters for segment construction
+context_length: 512
+forecast_horizon: 96
+
+# Output directories for generated JSONL datasets
+output_base_dir: "../../data/time-moe/ratfm/before_merge"
+output_test_dir: "../../data/time-moe/ratfm/eval"
+output_domain_group_dir: "../../data/time-moe/domain_group"
+output_exclude_domain_dir: "../../data/time-moe/exclude_domain"
+

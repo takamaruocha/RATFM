@@ -1,0 +1,18 @@
+# path to the UCR Anomaly Archive datasets
+ucr_root_path: ""
+
+# List of UCR files to exclude
+excluded_files:
+  - "013_UCR_Anomaly_DISTORTEDECG3_15000_16000_16100.txt"
+  - "202_UCR_Anomaly_CHARISfive_10411_10998_11028.txt"
+  - "097_UCR_Anomaly_NOISEGP711MarkerLFM5z3_5000_5948_5993.txt"
+  - "012_UCR_Anomaly_DISTORTEDECG2_15000_16000_16100.txt"
+  - "120_UCR_Anomaly_ECG2_15000_16000_16100.txt"
+  - "129_UCR_Anomaly_GP711MarkerLFM5z3_5000_5948_5993.txt"
+  - "009_UCR_Anomaly_DISTORTEDCIMIS44AirTemperature5_4000_4852_4900.txt"
+  - "203_UCR_Anomaly_CHARISfive_10500_10995_11028.txt"
+  - "230_UCR_Anomaly_mit14134longtermecg_19363_19510_19610.txt"
+  - "117_UCR_Anomaly_CIMIS44AirTemperature5_4000_4852_4900.txt"
+  - "021_UCR_Anomaly_DISTORTEDGP711MarkerLFM5z3_5000_5948_5993.txt"
+  - "121_UCR_Anomaly_ECG3_15000_16000_16100.txt"
+

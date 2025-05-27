@@ -1,0 +1,3 @@
+domain_dict_path: "../common/domains_dict.json"
+save_base: "../results/anomaly-transformer/time_series_wise/L1Loss_SMA"
+

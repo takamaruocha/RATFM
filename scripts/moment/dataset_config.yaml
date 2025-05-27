@@ -1,0 +1,9 @@
+domain_dict_path: "../../common/domains_dict.json"
+domain_group_dict_path: "../../common/domain_groups.json"
+
+context_length: 208
+forecast_horizon: 96
+
+output_base_dir: "../../data/time-moe/ratfm/before_merge"
+output_test_dir: "../../data/moment/ratfm/eval"
+

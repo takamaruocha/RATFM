@@ -1,0 +1,17 @@
+base_dir: "../../../../"
+main_script: "models/time-moe/settings/in_domain_FT/main_in_domain_FT.py"
+domain_dict_path: "common/domain_groups.json"
+base_data_path: "data/time-moe/domain_group/"
+save_base: "results/time-moe/in_domain_FT/"
+
+context_length: 1120
+forecast_horizon: 96
+data_stride_len: 96
+batch_size: 32
+num_train_epochs: 10
+normalization_method: "none"
+
+device: "cuda:1"
+
+
+

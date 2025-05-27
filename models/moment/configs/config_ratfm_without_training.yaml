@@ -1,0 +1,14 @@
+base_dir: "../../../../"
+domain_dict_path: "common/domains_dict.json"
+base_data_path: "data/moment/ratfm/reconstruction/train/"
+test_data_path: "data/moment/ratfm/reconstruction/eval/"
+save_base: "results/moment/ratfm_without_training/"
+
+context_length: 256
+forecast_horizon: 96
+data_stride_len: 96
+batch_size: 32
+
+device: "cuda:1"
+
+
