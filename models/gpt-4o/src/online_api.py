@@ -54,10 +54,8 @@ def online_AD_with_retries(
     train_dataset = SyntheticDataset(train_dir)
     train_dataset.load()
 
-    # 全部を縦方向（0軸）に結合する
     all_series = np.vstack(eval_dataset.series)
 
-    # 最小値と最大値を取得
     global_min = np.min(all_series)
     global_max = np.max(all_series)
 
