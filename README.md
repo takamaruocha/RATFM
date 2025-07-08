@@ -1,5 +1,7 @@
 # RATFM: Retrieval-augmented Time Series Foundation Model for Anomaly Detection
 
+![Diagram](images/logo.png)
+
 ## 📖 Introduction
 Inspired by the success of large language models (LLMs) in natural language processing, recent research has explored the building of time series foundation models and applied them to tasks such as forecasting, classification, and anomaly detection. However, their performances vary between different domains and tasks. In LLM-based approaches, test-time adaptation using example-based prompting has become common, owing to the high cost of retraining. In the context of anomaly detection, which is the focus of this study, providing normal examples from the target domain can also be effective. However, time series foundation models do not naturally acquire the ability to interpret or utilize examples or instructions, because the nature of time series data used during training does not encourage such capabilities. To address this limitation, we propose a retrieval augmented time series foundation model (RATFM), which enables pretrained time series foundation models to incorporate examples of test-time adaptation. We show that RATFM achieves a performance comparable to that of in-domain fine-tuning while avoiding domain-dependent fine-tuning. Experiments on the UCR Anomaly Archive, a multi-domain dataset including nine domains, confirms the effectiveness of the proposed approach.
 
